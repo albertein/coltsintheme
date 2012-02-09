@@ -6,4 +6,10 @@ function coltsin_get_path($filename) {
 function coltsin_get_template($template_name) {
     return file_get_contents(coltsin_get_path($template_name . ".html"));
 }
+  
+function coltsin_get_buffer($action) {
+    ob_start();
+    $action();
+    return ob_get_clean();  
+}
 ?>
