@@ -3,4 +3,5 @@
    global $coltsin_mustache;
    $coltsin_mustache = new Mustache;
    get_header();
+   get_footer();
 ?>
