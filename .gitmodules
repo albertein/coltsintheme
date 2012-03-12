@@ -1,0 +1,3 @@
+[submodule "src/psd/fonts/league-gothic"]
+	path = src/psd/fonts/league-gothic
+	url = git@github.com:theleagueof/league-gothic.git
