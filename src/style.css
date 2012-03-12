@@ -13,14 +13,19 @@ Licence URI:
 */
 
 body {
-    background: white url("img/bg.png") repeat-x fixed;
+    background: #F8F8F0 url("img/bg.png") repeat-x;
     margin: 0px;
     padding: 0px;
     font-family: 'Podkova', serif;
 }
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
 
 div.container {
-    margin-left: 160px;
+    margin-left: 130px;
+    width: 993px;
 }
 
 menu.top-menu {
@@ -67,11 +72,14 @@ menu.top-menu li.top-menu-search {
 input#site-search-field {
     width: 120px;
 }
+header {
+    background: url("img/main-bg.png") no-repeat 0 0px;    
+    border-bottom: 2px dashed black;
+}
 div.main-background {
     margin: 0px;
     width: 993px;
-    height: 572px;
-    background: url("img/main-bg.png") no-repeat 0 -150px;    
+    height: 420px;
     text-align: center;
     font-weight: bold;
 }
@@ -85,3 +93,126 @@ span.coltsin-name {
     color: #f36721;
     text-transform: uppercase;
 }
+
+article {
+    padding-bottom: 100px;
+}
+span.event-days-left {
+    font-size: .6em;
+    font-weight: normal;
+    margin-left: 20px;
+}
+div.read-more-button {
+    float: right;
+    padding: 10px 20px;
+    background-color: #221d18;
+    color: #f8f8f0;
+    margin-right: 20px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 4px #000;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    background-image: linear-gradient(bottom, rgb(34,29,24) 44%, rgb(61,56,51) 72%);
+    background-image: -o-linear-gradient(bottom, rgb(34,29,24) 44%, rgb(61,56,51) 72%);
+    background-image: -moz-linear-gradient(bottom, rgb(34,29,24) 44%, rgb(61,56,51) 72%);
+    background-image: -webkit-linear-gradient(bottom, rgb(34,29,24) 44%, rgb(61,56,51) 72%);
+    background-image: -ms-linear-gradient(bottom, rgb(34,29,24) 44%, rgb(61,56,51) 72%);
+
+    background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.44, rgb(34,29,24)),
+	    color-stop(0.72, rgb(61,56,51))
+    );
+    
+}
+div.article-end-separator {
+    margin-top: 70px;
+    clear: both;
+    position: relative;
+    left: -2%;
+    width: 115%;
+}
+div.article-end-separator div {
+    height: 41px;
+}
+div.article-end-left {
+    background: url("img/sheet-bg-left.png") no-repeat;
+    width: 20%;
+    float: left;
+    max-width: 251px;
+}
+div.article-end-middle {
+    background: url("img/sheet-bg-middle.png") repeat-x;
+    float: left;
+    width: 50%;
+}
+div.article-end-right {
+    float: left;
+    background: url("img/sheet-bg-right.png") no-repeat;
+    width: 20%;
+}
+div.main-page-read-more {
+    margin-bottom: 50px;
+}
+div.main-page-read-more div {
+    color: #d8d8d1;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 4px #000;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+}
+div.goto-events-button {
+    float: left;
+    width: 40%;
+    background-color: #ba3401;
+    background-image: linear-gradient(bottom, rgb(185,52,0) 47%, rgb(206,71,22) 74%);
+    background-image: -o-linear-gradient(bottom, rgb(185,52,0) 47%, rgb(206,71,22) 74%);
+    background-image: -moz-linear-gradient(bottom, rgb(185,52,0) 47%, rgb(206,71,22) 74%);
+    background-image: -webkit-linear-gradient(bottom, rgb(185,52,0) 47%, rgb(206,71,22) 74%);
+    background-image: -ms-linear-gradient(bottom, rgb(185,52,0) 47%, rgb(206,71,22) 74%);
+
+    background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.47, rgb(185,52,0)),
+    	color-stop(0.74, rgb(206,71,22))
+    );
+    
+}
+
+div.goto-blog-button {
+    float: right;
+    width: 40%;
+    background-color: #221e18;
+    background-image: linear-gradient(bottom, rgb(33,29,24) 47%, rgb(57,52,47) 74%);
+    background-image: -o-linear-gradient(bottom, rgb(33,29,24) 47%, rgb(57,52,47) 74%);
+    background-image: -moz-linear-gradient(bottom, rgb(33,29,24) 47%, rgb(57,52,47) 74%);
+    background-image: -webkit-linear-gradient(bottom, rgb(33,29,24) 47%, rgb(57,52,47) 74%);
+    background-image: -ms-linear-gradient(bottom, rgb(33,29,24) 47%, rgb(57,52,47) 74%);
+
+    background-image: -webkit-gradient(
+	    linear,
+    	left bottom,
+    	left top,
+    	color-stop(0.47, rgb(33,29,24)),
+    	color-stop(0.74, rgb(57,52,47))
+    );
+    
+}
+footer {
+    margin: 100px 0px 100px 0px;
+    width: 100%;
+    height: 266px;
+    background: black url("img/footer-bg.png") repeat 62px 67px;
+}
+div.footer-border-box {
+    width: 100%;
+    height: 260px;
+    border-bottom: 2px dashed white;
+}    
