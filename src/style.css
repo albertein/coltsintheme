@@ -11,3 +11,77 @@ Licence:
 Licence URI:
 
 */
+
+body {
+    background: white url("img/bg.png") repeat-x fixed;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Podkova', serif;
+}
+
+div.container {
+    margin-left: 160px;
+}
+
+menu.top-menu {
+    background: url("img/main-logo.png") no-repeat;
+    padding-left: 274px;
+    height: 134px;
+    width: 710px;
+    margin: 0px;
+}
+
+menu.top-menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2em;
+    color: #f8f8f0;
+    display: block;
+    height: 41px;
+    border-top: 1px solid #f36721;
+    border-bottom: 2px dashed white;
+}
+div.top-menu-container {
+    background-color: #272323;
+    height: 46px;
+    position: relative;
+    top: 50px;
+}
+menu.top-menu li {
+    padding: 10px 15px;
+    display: block;
+    float: left;
+}
+menu.top-menu li.top-menu-actual {
+    background-color: #443f3c;
+    border-right: 1px solid #462e24;
+}
+menu.top-menu li.top-menu-search {
+    background-color: #343232;
+    width: 200px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+input#site-search-field {
+    width: 120px;
+}
+div.main-background {
+    margin: 0px;
+    width: 993px;
+    height: 572px;
+    background: url("img/main-bg.png") no-repeat 0 -150px;    
+    text-align: center;
+    font-weight: bold;
+}
+div.main-background p {
+    position: relative;
+    left: -140px;
+    font-size: 2em;
+    margin: 0px;
+}
+span.coltsin-name {
+    color: #f36721;
+    text-transform: uppercase;
+}

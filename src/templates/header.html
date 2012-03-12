@@ -6,6 +6,7 @@
   <meta name="keywords" content="coltsin">
   <meta name="description" content="Coltsin es una comunidad orientada al desarrollo tecnologico en el estado de Sinaloa">
   <title>{{blog-name}}</title>
+  <link href='http://fonts.googleapis.com/css?family=Podkova:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" media="all" href="{{template-url}}/style.css">
   <link rel="alternate" type="application/rss+xml" title="Suscribirse al Feed RSS de {{blog-name}}" href="{{rss-feed}}">
   <link rel="alternate" type="application/atom+xml" title="Suscribirse al Feed Atom de {{blog-name}}" href="{{atom-feed}}">
@@ -13,8 +14,28 @@
   {{{wp-header}}}
 </head>
 <body>
-  <header>
-    <h1>{{blog-name}}</h1>
-    <h2>{{blog-description}}</h2>
-    <p>Mustache template</p>
-  </header> 
+  <div class="container">
+    <header>
+        <menu class="top-menu">
+            <div class="top-menu-container">
+                <ul>
+                    <li class="top-menu-actual">Inicio</li>
+                    <li>A cerca de</li>
+                    <li>Eventos</li>
+                    <li>Contacto</li>
+                    <li>Blog</li>
+                    <li class="top-menu-search">
+                        Buscar
+                        <input type="search" id="site-search-field">
+                    </li>
+                </ul>
+            </div>
+        </menu>
+        <div class="main-background">
+            <p>
+                <span class="coltsin-name">Coltsin</span>, 
+                Estimulando la Creatividad<br/>tecnologica en Sinaloa.
+            <p>
+        </div>
+    </header>
+  </div>
