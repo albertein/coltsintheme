@@ -108,24 +108,6 @@ div.read-more-button {
     background-color: #221d18;
     color: #f8f8f0;
     margin-right: 20px;
-    border-radius: 7px;
-    box-shadow: 3px 3px 4px #000;
-    -moz-box-shadow: 3px 3px 4px #000;
-    -webkit-box-shadow: 3px 3px 4px #000;
-    background-image: linear-gradient(bottom, rgb(34,29,24) 44%, rgb(61,56,51) 72%);
-    background-image: -o-linear-gradient(bottom, rgb(34,29,24) 44%, rgb(61,56,51) 72%);
-    background-image: -moz-linear-gradient(bottom, rgb(34,29,24) 44%, rgb(61,56,51) 72%);
-    background-image: -webkit-linear-gradient(bottom, rgb(34,29,24) 44%, rgb(61,56,51) 72%);
-    background-image: -ms-linear-gradient(bottom, rgb(34,29,24) 44%, rgb(61,56,51) 72%);
-
-    background-image: -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(0.44, rgb(34,29,24)),
-	    color-stop(0.72, rgb(61,56,51))
-    );
-    
 }
 div.article-end-separator {
     margin-top: 70px;
@@ -161,14 +143,74 @@ div.main-page-read-more div {
     font-size: 2em;
     text-align: center;
     padding: 10px;
+}
+div.goto-events-button {
+    float: left;
+    width: 40%;
+}
+
+div.goto-blog-button {
+    float: right;
+    width: 40%;
+}
+footer {
+    margin: 100px 0px 100px 0px;
+    width: 100%;
+    height: 266px;
+    background: black url("img/footer-bg.png") repeat 62px 67px;
+}
+div.footer-border-box {
+    width: 100%;
+    height: 260px;
+    border-bottom: 2px dashed white;
+}    
+div.contact-inline {
+    position: absolute;
+    top: 125px;
+    left: 620px;
+}
+div.contact-inline > div {
+    width: 268px;
+} 
+div.contact-inline-top {
+    height: 34px;
+    background: url("img/popup-top.png");
+}
+div.contact-inline-content {
+    background-color: #272323;
+    border-radius: 15px;
+    color: #f8f8f0;
+    box-shadow: 0 8px 8px black;
+    -moz-box-shadow: 0 8px 8px black;
+    -webkit-box-shadow: 0 8px 8px black;
+    padding: 20px 0px;
+}
+div.contact-inline-content > * {
+    margin-left: 10px;
+}
+div.contact-inline-content h1 {
+    font-size: 2em;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+div.contact-inline-content input, div.contact-inline-content textarea {
+    width: 228px;
+    color: #6f6d6b;
+    background-color: #343232;
+    border: 1px solid #232020;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin: 3px;
+    font-size: 1em;
+}
+div.orange-button, div.dark-button {
     border-radius: 7px;
     box-shadow: 3px 3px 4px #000;
     -moz-box-shadow: 3px 3px 4px #000;
     -webkit-box-shadow: 3px 3px 4px #000;
 }
-div.goto-events-button {
-    float: left;
-    width: 40%;
+div.orange-button {
     background-color: #ba3401;
     background-image: linear-gradient(bottom, rgb(185,52,0) 47%, rgb(206,71,22) 74%);
     background-image: -o-linear-gradient(bottom, rgb(185,52,0) 47%, rgb(206,71,22) 74%);
@@ -183,12 +225,8 @@ div.goto-events-button {
 	    color-stop(0.47, rgb(185,52,0)),
     	color-stop(0.74, rgb(206,71,22))
     );
-    
 }
-
-div.goto-blog-button {
-    float: right;
-    width: 40%;
+div.dark-button {
     background-color: #221e18;
     background-image: linear-gradient(bottom, rgb(33,29,24) 47%, rgb(57,52,47) 74%);
     background-image: -o-linear-gradient(bottom, rgb(33,29,24) 47%, rgb(57,52,47) 74%);
@@ -203,16 +241,12 @@ div.goto-blog-button {
     	color-stop(0.47, rgb(33,29,24)),
     	color-stop(0.74, rgb(57,52,47))
     );
-    
 }
-footer {
-    margin: 100px 0px 100px 0px;
-    width: 100%;
-    height: 266px;
-    background: black url("img/footer-bg.png") repeat 62px 67px;
+div.contact-send-button {
+    float: right;
+    padding: 8px;
+    margin-right: 10px;
 }
-div.footer-border-box {
-    width: 100%;
-    height: 260px;
-    border-bottom: 2px dashed white;
-}    
+div.clear {
+    clear: both;
+}
