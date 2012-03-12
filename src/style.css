@@ -28,7 +28,7 @@ div.container {
     width: 993px;
 }
 
-menu.top-menu {
+nav.top-menu {
     background: url("img/main-logo.png") no-repeat;
     padding-left: 274px;
     height: 134px;
@@ -36,7 +36,7 @@ menu.top-menu {
     margin: 0px;
 }
 
-menu.top-menu ul {
+nav.top-menu ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -53,16 +53,16 @@ div.top-menu-container {
     position: relative;
     top: 50px;
 }
-menu.top-menu li {
+nav.top-menu li {
     padding: 10px 15px;
     display: block;
     float: left;
 }
-menu.top-menu li.top-menu-actual {
+nav.top-menu li.top-menu-actual {
     background-color: #443f3c;
     border-right: 1px solid #462e24;
 }
-menu.top-menu li.top-menu-search {
+nav.top-menu li.top-menu-search {
     background-color: #343232;
     width: 200px;
     margin-top: 5px;
