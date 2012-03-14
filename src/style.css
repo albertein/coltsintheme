@@ -53,6 +53,11 @@ div.top-menu-container {
     position: relative;
     top: 50px;
 }
+nav a {
+    text-decoration: none;
+    color: #f8f8f0;
+}
+
 nav.top-menu li {
     padding: 10px 15px;
     display: block;
@@ -73,9 +78,14 @@ input#site-search-field {
     width: 120px;
 }
 header {
+    margin-bottom: 10px;
+}
+
+header.main-page {
     background: url("img/main-bg.png") no-repeat 0 0px;    
     border-bottom: 2px dashed black;
 }
+
 div.main-background {
     margin: 0px;
     width: 993px;
@@ -168,6 +178,8 @@ div.contact-inline {
     position: absolute;
     top: 125px;
     left: 620px;
+    z-index: 100;
+    display: none;
 }
 div.contact-inline > div {
     width: 268px;
@@ -249,4 +261,74 @@ div.contact-send-button {
 }
 div.clear {
     clear: both;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    margin-left: 50px;
+}
+
+div.post-entries {
+    background-color: white;
+    float: left;
+    width: 70%;
+}
+
+div.post-entries h1 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+div.post-entries article {
+    border-top: 2px dashed black;
+}
+
+div.post-entries article {
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+div.post-entries article aside {
+    float: right;
+    width: 74px;
+    height: 86px;
+    background: url("img/post-date-bg.png");
+    margin-right: 30px;
+    position: relative;
+    top: -3px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+div.post-entries article aside span.month {
+    font-size: 1.3em;
+}
+div.post-entries article aside span.day {
+    font-size: 2.5em;
+}
+div.tag-soup {
+    width: 80%;
+}
+div.tag {
+    float: left;
+}
+div.tag div {
+    margin: 0px;
+    padding: 0px;
+    height: 35px;
+    float: left;
+}
+div.tag-left {
+    background: url("img/tag-bg-left.png");
+    width: 16px;
+}
+div.tag-middle {
+    background: url("img/tag-bg-middle.png") repeat-x;
+    padding-top: 7px !important;
+}
+
+div.tag-right {
+    background: url("img/tag-bg-right.png");
+    width: 20px;
 }

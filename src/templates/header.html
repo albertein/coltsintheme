@@ -16,15 +16,17 @@
 <body>
     <a href="http://github.com/albertein/coltsintheme"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
   <div class="container">
-    <header>
+    <header class="{{header-class}}">
         <nav class="top-menu">
             <div class="top-menu-container">
                 <ul>
-                    <li class="top-menu-actual">Inicio</li>
+                    <li class="top-menu-actual">
+		      <a href="{{home-url}}">Inicio</a>
+		    </li>
                     <li>A cerca de</li>
                     <li>Eventos</li>
                     <li>Contacto</li>
-                    <li>Blog</li>
+                    <li><a href="{{blog-url}}">Blog</a></li>
                     <li class="top-menu-search">
                         Buscar
                         <input type="search" id="site-search-field">
@@ -32,46 +34,27 @@
                 </ul>
             </div>
         </nav>
+	<div class="contact-inline">
+	  <div class="contact-inline-top">
+	  </div>
+	  <div class="contact-inline-content">
+            <h1>Contacto</h1>
+            <p><input type="text" value="Nombre"></p>
+            <p><input type="email" value="Correo Electronico"></p>
+            <p><input type="text" value="Asunto"></p>
+            <p><textarea>Mensage</textarea></p>
+            <div class="contact-send-button orange-button">
+              Enviar
+            </div>
+            <div class="clear"></div>
+	  </div>
+	</div>
+	{{#is_front_page}}
         <div class="main-background">
             <p>
                 <span class="coltsin-name">Coltsin</span>, 
                 Estimulando la Creatividad<br/>tecnologica en Sinaloa.
             <p>
         </div>
+	{{/is_front_page}}
     </header>
-    <article>
-        <h1>BarCamp 3 <span class="event-days-left">Faltan 30 dias</span></h1>
-        <p>Descripción del evento Barcamp.Descripción del evento Barcamp.Descripción del evento Barcamp.Descripción del evento Barcamp.Descripción del evento Barcamp.</p> 
-        <div class="read-more-button orange-button">
-            Leer más..
-        </div>
-        <div class="article-end-separator">
-            <div class="article-end-left"></div>
-            <div class="article-end-middle"></div>
-            <div class="article-end-right"></div>
-        </div>
-    </article>
-    <div class="main-page-read-more">
-        <div class="goto-events-button orange-button">
-            Ver más eventos
-        </div>
-        <div class="goto-blog-button dark-button">
-            Ir al Blog
-        </div>
-    </div>
-  </div>
-  <div class="contact-inline">
-      <div class="contact-inline-top">
-      </div>
-      <div class="contact-inline-content">
-          <h1>Contacto</h1>
-          <p><input type="text" value="Nombre"></p>
-          <p><input type="email" value="Correo Electronico"></p>
-          <p><input type="text" value="Asunto"></p>
-          <p><textarea>Mensage</textarea></p>
-          <div class="contact-send-button orange-button">
-              Enviar
-          </div>
-          <div class="clear"></div>
-      </div>
-  </div>
