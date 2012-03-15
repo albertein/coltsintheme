@@ -2,99 +2,32 @@
       "awesome sidebar is awesome"
     </aside>
     <div class="post-entries">
+      {{#posts}}
       <article>
 	<aside>
-	  <span class="day">19</span>
+	  <span class="day">{{day}}</span>
 	  <br>
-	  <span class="month">Feb.</span></aside>
+	  <span class="month">{{month}}.</span></aside>
 	<header>
-	  <h1>Titulo del Post</h1>
-	  <p>Tras tres días de competencia,Watson se impuso sobre los dos ex-campeones del concurso televisivo estadounidense Jeopardy, en un encuentro histórico entre humanos y computadoras.</p>
+	  <h1><a href="{{permalink}}">{{title}}</a></h1>
+	  {{{content}}}
 	</header>
 	<div class="post-bottom">
-	  <div class="read-more-button orange-button">Leer más..</div>
+	  <div class="read-more-button dark-button">
+	    <a href="{{permalink}}">Leer más..</a></div>
 	  <div class="tag-soup">
+	    {{#tags}}
 	    <div class="tag">
 	      <div class="tag-left"></div>
-	      <div class="tag-middle">programacion</div>
+	      <div class="tag-middle"><a href="{{tag_link}}">{{name}}</a></div>
 	      <div class="tag-right"></div>
 	    </div>
-	    <div class="tag">
-	      <div class="tag-left"></div>
-	      <div class="tag-middle">talleres</div>
-	      <div class="tag-right"></div>
-	    </div>
-	    <div class="tag">
-	      <div class="tag-left"></div>
-	      <div class="tag-middle">eventos</div>
-	      <div class="tag-right"></div>
-	    </div>
-	    <div class="tag">
-	      <div class="tag-left"></div>
-	      <div class="tag-middle">videojuegos</div>
-	      <div class="tag-right"></div>
-	    </div>
-	    <div class="tag">
-	      <div class="tag-left"></div>
-	      <div class="tag-middle">as3</div>
-	      <div class="tag-right"></div>
-	    </div>
-	    <div class="tag">
-	      <div class="tag-left"></div>
-	      <div class="tag-middle">flashdevelop</div>
-	      <div class="tag-right"></div>
-	    </div>
+	    {{/tags}}
 	  </div>
 	</div>
 	<div class="clear"></div>
       </article>
-      <article>
-	<aside>
-	  <span class="day">19</span>
-	  <br>
-	  <span class="month">Feb.</span></aside>
-	<header>
-	  <h1>Titulo del Post</h1>
-	  <p>Tras tres días de competencia,Watson se impuso sobre los dos ex-campeones del concurso televisivo estadounidense Jeopardy, en un encuentro histórico entre humanos y computadoras.</p>
-	</header>
-	<div class="post-bottom">
-	  <div class="read-more-button dark-button">Leer más..</div>
-	  <div class="tag-soup">
-	    <div class="tag">
-	      <div class="tag-left"></div>
-	      <div class="tag-middle">programacion</div>
-	      <div class="tag-right"></div>
-	    </div>
-	    <div class="tag">
-	      <div class="tag-left"></div>
-	      <div class="tag-middle">talleres</div>
-	      <div class="tag-right"></div>
-	    </div>
-	    <div class="tag">
-	      <div class="tag-left"></div>
-	      <div class="tag-middle">eventos</div>
-	      <div class="tag-right"></div>
-	    </div>
-	    <div class="tag">
-	      <div class="tag-left"></div>
-	      <div class="tag-middle">videojuegos</div>
-	      <div class="tag-right"></div>
-	    </div>
-	    <div class="tag">
-	      <div class="tag-left"></div>
-	      <div class="tag-middle">as3</div>
-	      <div class="tag-right"></div>
-	    </div>
-	    <div class="tag">
-	      <div class="tag-left"></div>
-	      <div class="tag-middle">flashdevelop</div>
-	      <div class="tag-right"></div>
-	    </div>
-	  </div>
-	</div>
-	<div class="clear"></div>
-      </article>
-
+      {{/posts}}
     </div>
     <div class="clear"></div>
       

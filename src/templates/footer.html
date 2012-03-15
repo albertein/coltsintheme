@@ -1,6 +1,38 @@
+    </div>
     <footer>
-        <div class="footer-border-box">
-        </div>
+      {{^is_front_page}}
+      <nav class="bottom-menu footer-border-box">
+	<div class="bottom-menu-container">
+	  <ul>
+	    <li><a href="{{home-url}}">Inicio</a></li>
+	    <li>A cerca de</li>
+	    <li><img src="{{theme-path}}/img/logo-big.png" alt="Logo"></li>
+	    <li>Eventos</li>
+	    <li>Contacto</li>
+	  </ul>
+	</div>
+      </nav>
+      <div class="contact-inline contact-inline-upward">
+	<div class="contact-inline-content">
+          <h1>Contacto</h1>
+          <p><input type="text" value="Nombre"></p>
+          <p><input type="email" value="Correo Electronico"></p>
+          <p><input type="text" value="Asunto"></p>
+          <p><textarea>Mensage</textarea></p>
+          <div class="contact-send-button orange-button">
+            Enviar
+          </div>
+          <div class="clear"></div>
+	</div>
+	<div class="contact-inline-bottom">
+	</div>
+      </div>
+
+      {{/is_front_page}}
+      {{#is_front_page}}
+      <div class="footer-border-box">
+      </div>
+      {{/is_front_page}}
     </footer>
     {{{wp-footer}}}
 </body>
