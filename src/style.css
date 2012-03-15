@@ -77,13 +77,13 @@ nav.top-menu li.top-menu-search {
 input#site-search-field {
     width: 120px;
 }
+
 header {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 header.main-page {
     background: url("img/main-bg.png") no-repeat 0 0px;    
-    border-bottom: 2px dashed black;
 }
 
 div.main-background {
@@ -104,9 +104,6 @@ span.coltsin-name {
     text-transform: uppercase;
 }
 
-article {
-    padding-bottom: 100px;
-}
 span.event-days-left {
     font-size: .6em;
     font-weight: normal;
@@ -119,32 +116,7 @@ div.read-more-button {
     color: #f8f8f0;
     margin-right: 20px;
 }
-div.article-end-separator {
-    margin-top: 70px;
-    clear: both;
-    position: relative;
-    left: -2%;
-    width: 115%;
-}
-div.article-end-separator div {
-    height: 41px;
-}
-div.article-end-left {
-    background: url("img/sheet-bg-left.png") no-repeat;
-    width: 20%;
-    float: left;
-    max-width: 251px;
-}
-div.article-end-middle {
-    background: url("img/sheet-bg-middle.png") repeat-x;
-    float: left;
-    width: 50%;
-}
-div.article-end-right {
-    float: left;
-    background: url("img/sheet-bg-right.png") no-repeat;
-    width: 20%;
-}
+
 div.main-page-read-more {
     margin-bottom: 50px;
 }
@@ -218,9 +190,9 @@ div.contact-inline-content input, div.contact-inline-content textarea {
 }
 div.orange-button, div.dark-button {
     border-radius: 7px;
-    box-shadow: 3px 3px 4px #000;
-    -moz-box-shadow: 3px 3px 4px #000;
-    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 1px #000;
+    -moz-box-shadow: 1px 1px 1px #000;
+    -webkit-box-shadow: 1px 1px 1px #000;
 }
 div.orange-button {
     background-color: #ba3401;
@@ -280,13 +252,17 @@ div.post-entries h1 {
     margin-bottom: 0px;
 }
 
-div.post-entries article {
-    border-top: 2px dashed black;
-}
 
-div.post-entries article {
+article {
+    margin-top: 20px;
+    background-color: white;
+    background-image: url("img/article-bg1.png"), url("img/article-bg2.png"), url("img/article-bg3.png");
+    background-position: -5px bottom, right bottom, center bottom;
+    background-repeat: no-repeat, no-repeat, repeat-x;
     padding-left: 20px;
     padding-right: 0px;
+    border-top: 2px dashed black;
+    padding-bottom: 40px;
 }
 
 div.post-entries article aside {
@@ -332,3 +308,4 @@ div.tag-right {
     background: url("img/tag-bg-right.png");
     width: 20px;
 }
+
