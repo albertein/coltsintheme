@@ -1,22 +1,9 @@
-<?
+<?php
+get_header();
 global $coltsin_mustache;
-$template = coltsin_get_template('blog');
+$template = coltsin_get_template('home');
 $posts = array();
 $index = 0;
-$traslated_months = array(
-			  'Jan' => 'Ene',
-			  'Feb' => 'Feb',
-			  'Mar' => 'Mar',
-			  'Apr' => 'Abr',
-			  'May' => 'May',
-			  'Jun' => 'Jun',
-			  'Jul' => 'Jul',
-			  'Aug' => 'Ago',
-			  'Sep' => 'Sep',
-			  'Oct' => 'Oct',
-			  'Nov' => 'Nov',
-			  'Dec' => 'Dec');
-query_posts('posts_per_page=5');
 if (have_posts()) {
   while(have_posts()) {
     the_post();
@@ -47,4 +34,5 @@ if (have_posts()) {
 }
 $data = array('posts' => $posts);
 echo $coltsin_mustache->render($template, $data);
+get_footer();
 ?>
