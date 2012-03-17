@@ -32,7 +32,7 @@ if (have_posts()) {
 
   }
 }
-$data = array('posts' => $items);
+$data = array('posts' => $items, 'single' => is_single());
 echo $coltsin_mustache->render($template, $data);
 get_footer();
 ?>
