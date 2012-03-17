@@ -1,4 +1,4 @@
-<?
+<?php
 global $coltsin_mustache;
 $wp_header = coltsin_get_buffer(function() {
     wp_enqueue_script('jquery');

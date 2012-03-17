@@ -1,4 +1,4 @@
-<?
+<?php
     global $coltsin_mustache;
     $template = coltsin_get_template('footer');
     $wp_footer = coltsin_get_buffer(function() {
