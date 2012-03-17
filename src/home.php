@@ -32,7 +32,18 @@ if (have_posts()) {
 
   }
 }
-$data = array('posts' => $items, 'single' => is_single());
+
+$page_title = '';
+if (is_archive()) {
+  $page_title = 'Historico: ';
+  if (is_tag())
+    $page_title = 'Entradas sobre: ' . get_query_var('tag');
+}
+
+$data = array('posts' => $items, 
+	      'single' => is_single(),
+	      'is_archive' => is_archive(),
+	      'page-title' => $page_title);
 echo $coltsin_mustache->render($template, $data);
 get_footer();
 ?>

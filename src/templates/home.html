@@ -2,6 +2,9 @@
       "awesome sidebar is awesome"
     </aside>
     <div class="post-entries">
+      {{#is_archive}}
+      <h1>{{page-title}}</h1>
+      {{/is_archive}}
       {{#posts}}
       <article>
 	<aside>
