@@ -2,7 +2,7 @@
 get_header();
 global $coltsin_mustache;
 $template = coltsin_get_template('home');
-$posts = array();
+$items = array();
 $index = 0;
 if (have_posts()) {
   while(have_posts()) {
@@ -20,7 +20,7 @@ if (have_posts()) {
       }
     }
 	
-    $posts[$index] = array(
+    $items[$index] = array(
 			    'title' => get_the_title(),
 			    'permalink' => get_permalink(get_the_ID()),
 			    'content' => get_the_content(),
@@ -32,7 +32,7 @@ if (have_posts()) {
 
   }
 }
-$data = array('posts' => $posts);
+$data = array('posts' => $items);
 echo $coltsin_mustache->render($template, $data);
 get_footer();
 ?>
