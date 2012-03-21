@@ -38,6 +38,8 @@ if (is_archive()) {
   $page_title = 'Historico: ';
   if (is_tag())
     $page_title = 'Entradas sobre: ' . get_query_var('tag');
+  if (is_category())
+    $page_title = get_category(get_query_var('cat'))->name;
 }
 
 $data = array('posts' => $items, 
