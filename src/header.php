@@ -5,6 +5,7 @@ $wp_header = coltsin_get_buffer(function() {
     wp_head();
  });
 $template = coltsin_get_template('header');
+$options = get_option('coltsin_display_options');
 $data = array(
 	      'charset' => get_bloginfo('charset'),
 	      'blog-name' => get_bloginfo('name'),
@@ -17,6 +18,7 @@ $data = array(
 	      'header-class' => is_front_page() ? 'main-page' : 'blog-page',
 	      'home-url' => get_home_url(),
 	      'blog-url' => get_permalink(get_option('page_for_posts')),
+	      'about-url' => get_permalink($options['about_page']),
 	      'is_front_page' => is_front_page()
 );
 echo $coltsin_mustache->render($template, $data);

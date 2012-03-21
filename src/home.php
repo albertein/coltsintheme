@@ -41,7 +41,7 @@ if (is_archive()) {
 }
 
 $data = array('posts' => $items, 
-	      'single' => is_single(),
+	      'single' => is_single() || is_page(),
 	      'is_archive' => is_archive(),
 	      'page-title' => $page_title);
 echo $coltsin_mustache->render($template, $data);
