@@ -402,3 +402,20 @@ div#sidebar > ul {
     margin: 0px;
     padding: 0px;
 }
+ul.tag-list {
+    list-style-type: none;
+    padding: 0px 5px;
+}
+
+ul.tag-list li > * {
+    margin-left: 10px;
+}
+
+ul.tag-list li:before {
+    content: "-";
+}
+
+ul.tag-list a {
+    text-decoration: none;
+    color: black;
+}

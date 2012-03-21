@@ -13,6 +13,7 @@ function coltsin_get_buffer($action) {
     return ob_get_clean();  
 }
 include(coltsin_get_path('/inc/Mustache.php'));
+include(coltsin_get_path('/inc/tags-widget.php'));
 global $coltsin_mustache;
 $coltsin_mustache = new Mustache;
 
