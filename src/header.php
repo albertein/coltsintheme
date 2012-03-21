@@ -19,6 +19,7 @@ $data = array(
 	      'home-url' => get_home_url(),
 	      'blog-url' => get_permalink(get_option('page_for_posts')),
 	      'about-url' => get_permalink($options['about_page']),
+	      'events-url' => get_category_link($options['events_category']),
 	      'is_front_page' => is_front_page()
 );
 echo $coltsin_mustache->render($template, $data);
