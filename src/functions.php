@@ -16,6 +16,12 @@ include(coltsin_get_path('/inc/Mustache.php'));
 global $coltsin_mustache;
 $coltsin_mustache = new Mustache;
 
+register_sidebars(1, array(
+		       'before_widget' => '<section class="sidebar-item">',
+		       'before_title' => '<h2>',
+		       'after_title' => '</h2><div class="sidebar-item-content"><div class="sidebar-item-decoration"><div class="border-box"></div></div><div class="sidebar-item-content-box">',
+		       'after_widget' => '</div></div></section'));
+
 add_action('admin_menu', 'coltsin_admin_menu');
 add_action('admin_init', 'coltsin_admin_init');
 

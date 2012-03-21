@@ -371,3 +371,34 @@ article h1 a, div.tag a {
 div.tag {
     cursor: pointer;
 }
+
+section.sidebar-item h2 {
+    margin: 0px;
+}
+
+div.sidebar-item-decoration {
+    position: relative;
+    top: 3px;
+    height: 10px;
+    background-color: #272323;
+    border-top: 1px solid #f36721;
+}
+div.sidebar-item-decoration div.border-box {
+    height: 8px;
+    border-bottom: 2px dashed white;
+}
+div.sidebar-item-content {
+    background-color: rgb(167, 191, 191);
+    background-color: rgba(167, 191, 191, .22);
+}
+div.sidebar-item-content-box {
+    padding: 0px 8px 5px;
+}
+div#sidebar {
+    margin: 0px;
+    padding: 0px;
+}
+div#sidebar > ul {
+    margin: 0px;
+    padding: 0px;
+}

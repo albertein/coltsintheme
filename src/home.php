@@ -42,10 +42,15 @@ if (is_archive()) {
     $page_title = get_category(get_query_var('cat'))->name;
 }
 
+$sidebar = coltsin_get_buffer(function() {
+    get_sidebar();
+  });
+
 $data = array('posts' => $items, 
 	      'single' => is_single() || is_page(),
 	      'is_archive' => is_archive(),
-	      'page-title' => $page_title);
+	      'page-title' => $page_title,
+	      'sidebar' => $sidebar);
 echo $coltsin_mustache->render($template, $data);
 get_footer();
 ?>
