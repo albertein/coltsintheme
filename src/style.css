@@ -63,7 +63,7 @@ nav.top-menu li {
     display: block;
     float: left;
 }
-nav.top-menu li.top-menu-actual {
+nav.top-menu li:hover {
     background-color: #443f3c;
     border-right: 1px solid #462e24;
 }
