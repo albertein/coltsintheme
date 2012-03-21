@@ -1,11 +1,13 @@
+    {{#events}}
     <article class="main-article">
-        <h1>BarCamp 3 <span class="event-days-left">Faltan 30 dias</span></h1>
-        <p>Descripción del evento Barcamp.Descripción del evento Barcamp.Descripción del evento Barcamp.Descripción del evento Barcamp.Descripción del evento Barcamp.</p> 
+        <h1>{{title}}<span class="event-days-left">Faltan {{ETA}} dias</span></h1>
+        {{{content}}}
         <div class="read-more-button orange-button">
-            Leer más..
+            <a href="{{permalink}}">Leer más..</a>
         </div>
 	<div class="clear"></div>
     </article>
+    {{/events}}
     <div class="main-page-read-more">
         <div class="goto-events-button orange-button">
             Ver más eventos
