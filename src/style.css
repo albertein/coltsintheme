@@ -117,7 +117,7 @@ div.read-more-button {
     margin-right: 20px;
 }
 
-div.read-more-button a {
+div.read-more-button a, div.orange-button a, div.dark-button a {
     color: #f8f8f0;
     text-decoration: none;
 }

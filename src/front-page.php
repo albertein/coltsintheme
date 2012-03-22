@@ -20,7 +20,9 @@ foreach($items as $item) {
 			  );
 
 }
-$data = array('events' => $events);
+$data = array('events' => $events, 
+	      'blog-url' => get_permalink(get_option('page_for_posts')),
+	      'events-url' => get_category_link($options['events_category']));
 echo $coltsin_mustache->render($template, $data);
 get_footer();
 ?>
