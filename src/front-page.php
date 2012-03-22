@@ -7,7 +7,7 @@ $events = array();
 $index = 0;
 $items = get_posts(array(
 		  'cat' => $options['events_category'],
-		  'number_posts' => 1));
+		  'numberposts' => 1));
 foreach($items as $item) {
   $event_date = new DateTime(get_post_meta($item->ID, 'eventdate', true));
   $now = new DateTime(date('Y-m-d'));
