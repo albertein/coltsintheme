@@ -14,6 +14,7 @@ function coltsin_get_buffer($action) {
 }
 include(coltsin_get_path('/inc/Mustache.php'));
 include(coltsin_get_path('/inc/tags-widget.php'));
+include(coltsin_get_path('/inc/events-widget.php'));
 global $coltsin_mustache;
 $coltsin_mustache = new Mustache;
 

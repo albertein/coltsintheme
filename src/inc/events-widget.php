@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Coltsin Tags Widget
- * Description: Display the Tags using on Wordpress and it's post count
+ * Plugin Name: Coltsin Events Widget
+ * Description: Display the upcoming events 
  * Author: Alberto Avila
  * Version: 1.0.0
  * Author URI: http://albertein.com.mx
@@ -9,19 +9,19 @@
 
 defined('ABSPATH') or die("Cannot access pages directly.");
 defined("DS") or define("DS", DIRECTORY_SEPARATOR);
-add_action( 'widgets_init', create_function( '', 'register_widget("Coltsin_Tags_Widget");' ) );
+add_action( 'widgets_init', create_function( '', 'register_widget("Coltsin_Events_Widget");' ) );
 
-class Coltsin_Tags_Widget extends WP_Widget {
+class Coltsin_Events_Widget extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
 	 */
   public function __construct() {
     parent::__construct(
-	 		'coltsin_tags_widget', // Base ID
-			'Coltsin_Tags_Widget', // Name
+	 		'coltsin_events_widget', // Base ID
+			'Coltsin_Events_Widget', // Name
 			array('description' => 
-			      'Display list of tags with its post count')
+			      'Display the upcoming events')
 			);
   }
 
@@ -41,17 +41,30 @@ class Coltsin_Tags_Widget extends WP_Widget {
     echo $before_widget;
     if ( ! empty( $title ) )
       echo $before_title . $title . $after_title;
-    $tags = get_tags(array('pad_counts' => false));
+    $options = get_option('coltsin_display_options');
+    $today = date("Y-m-d");
+    $items = get_posts(array('category' => $options['events_category'],
+			     'order' => 'DESC',
+			     'orderby' => 'meta_value',
+			     'meta_key' => 'eventdate',
+			     'meta_query' => array('key' => 'eventdate',
+						   'value' => $today,
+						   'compare' => '>=',
+						   'type' => 'date'
+						   )
+			     )
+		       );
     $elements = array();
     $index = 0;
-    foreach($tags as $tag) {
-      $elements[$index++] = array('name' => $tag->name,
-				  'count' => $tag->count,
-				  'tag-link' => get_tag_link($tag->term_id)
+    foreach($items as $item) {
+      $event_date = strtotime(get_post_meta($item->ID, 'eventdate', true));
+      $elements[$index++] = array('title' => $item->post_title,
+				  'date' => date('d/m/Y', $event_date),
+				  'event-link' => get_permalink($item->ID)
 				  );
     }
-    $template = coltsin_get_template('tags-widget-render');
-    echo $coltsin_mustache->render($template, array('tags' => $elements));
+    $template = coltsin_get_template('events-widget-render');
+    echo $coltsin_mustache->render($template, array('events' => $elements));
     echo $after_widget;
   }
 

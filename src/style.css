@@ -402,7 +402,7 @@ div#sidebar > ul {
     margin: 0px;
     padding: 0px;
 }
-ul.tag-list {
+ul.tag-list, ul.event-list {
     list-style-type: none;
     padding: 0px 5px;
 }
@@ -418,4 +418,18 @@ ul.tag-list li:before {
 ul.tag-list a {
     text-decoration: none;
     color: black;
+}
+
+ul.event-list a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.event-list span.event-date {
+    color: #f36721;
+    font-weight: bold;
+}
+
+ul.event-list span.event-name {
+    text-decoration: underline;
 }
