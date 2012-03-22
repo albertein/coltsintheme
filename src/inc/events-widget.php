@@ -59,7 +59,7 @@ class Coltsin_Events_Widget extends WP_Widget {
     foreach($items as $item) {
       $event_date = strtotime(get_post_meta($item->ID, 'eventdate', true));
       $elements[$index++] = array('title' => $item->post_title,
-				  'date' => date('d/m/Y', $event_date),
+				  'date' => date('d/m/y', $event_date),
 				  'event-link' => get_permalink($item->ID)
 				  );
     }
@@ -82,7 +82,7 @@ class Coltsin_Events_Widget extends WP_Widget {
       $title = $instance[ 'title' ];
     }
     else {
-      $title = 'Tags';
+      $title = 'Events';
     }
     $data = array('id' => $this->get_field_id('title'),
 		  'name' => $this->get_field_name('title'),
